@@ -20,11 +20,14 @@
 <body>
     <h1>Luke Pratt</h1>
         <p>Aspiring Programmer</p>
-        <p><button onclick="AboutFuntion()">About Me</button></p>
-        <p><button>Projects</button></p>
-        <script>
-            function AboutFuntion(){
-                windows.location.href = "https://quakn.github.io/About";
+        <p><button id="About">About Me</button></p>
+        <p><button id="Projects">Projects</button></p>
+        <script><!--js-->
+            document.getElementById("About").onclick = function () {
+                location.href = "https://quakn.github.io/About"
+            }
+            document.getElementById("Projects").onclick = function () {
+                location.href = "https://quakn.github.io/Projects"
             }
         </script>
 </body>
