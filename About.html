@@ -2,23 +2,67 @@
 <html lang="en">
 <head>
     <meta charset="utf-8"/>
-    <title>About Luke Pratt</title>
+    <title>Luke Pratt's Portfolio</title>
     <style>
+        body {
+            background-color: black;
+            color: white
+        }
         button {
             background-color: transparent;
-            border: 2px solid black;
+            color: white;
+            border: 2px solid blueviolet;
             padding: 10px;
             font-size: 1.0rem;
         }
         button:hover {
-            background-color: blue;
-            border: 2px solid black;
+            background-color: darkorchid;
+            border: 2px solid blueviolet;
             color: white;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+        li {
+            /*display: inline;*/
+            float: left;
+        }
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        li a:hover {
+            background-color: #111;
+        }
+        .active {
+            background-color: blueviolet;
         }
     </style>
 </head>
 <body>
+    <ul>
+        <li><a href="https://quakn.github.io/index">Home</a></li>
+        <li><a href="https://quakn.github.io/About">About</a></li>
+        <li><a href="https://quakn.github.io/Projects">Projects</a></li>
+    </ul>
     <h1>Luke Pratt</h1>
         <p>Aspiring Programmer</p>
+        <p><button id="About">About Me</button></p>
+        <p><button id="Projects">Projects</button></p>
+        <script><!--js-->
+            document.getElementById("About").onclick = function () {
+                location.href = "https://quakn.github.io/About"
+            }
+            document.getElementById("Projects").onclick = function () {
+                location.href = "https://quakn.github.io/Projects"
+            }
+        </script>
 </body>
 </html>
